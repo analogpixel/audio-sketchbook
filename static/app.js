@@ -1,10 +1,11 @@
 // ──────────────────────────────────────────────────────────────
 // State
 // ──────────────────────────────────────────────────────────────
+const _savedView = (() => { try { return JSON.parse(localStorage.getItem('sketchbook-view')); } catch { return null; } })();
 const state = {
   items: {},      // id -> item data
-  pan: { x: 80, y: 80 },
-  zoom: 1,
+  pan: _savedView?.pan ?? { x: 80, y: 80 },
+  zoom: _savedView?.zoom ?? 1,
   dragging: null, // { id, startMX, startMY, origX, origY }
   panning: false,
   panStart: { x: 0, y: 0 },
@@ -279,9 +280,14 @@ function fmtTime(s) {
 // ──────────────────────────────────────────────────────────────
 // Viewport / canvas transform
 // ──────────────────────────────────────────────────────────────
+let _saveViewTimer = null;
 function updateTransform() {
   document.getElementById('canvas-container').style.transform =
     `translate(${state.pan.x}px, ${state.pan.y}px) scale(${state.zoom})`;
+  clearTimeout(_saveViewTimer);
+  _saveViewTimer = setTimeout(() => {
+    localStorage.setItem('sketchbook-view', JSON.stringify({ pan: state.pan, zoom: state.zoom }));
+  }, 300);
 }
 
 function screenToCanvas(sx, sy) {
@@ -503,13 +509,15 @@ let _recDevices = [];
 async function openRecordModal() {
   document.getElementById('modal-record').classList.remove('hidden');
   _recDevices = await api('/api/devices');
+  const lastDev = localStorage.getItem('sketchbook-record-device');
   document.getElementById('record-device').innerHTML =
-    _recDevices.map(d => `<option value="${d.id}">${esc(d.name)} (${d.channels}ch)</option>`).join('');
+    _recDevices.map(d => `<option value="${d.id}"${String(d.id) === lastDev ? ' selected' : ''}>${esc(d.name)} (${d.channels}ch)</option>`).join('');
   document.getElementById('record-status').innerHTML = '';
 }
 
 async function startRecording() {
   const devId = parseInt(document.getElementById('record-device').value);
+  localStorage.setItem('sketchbook-record-device', String(devId));
   const sr = _recDevices.find(d => d.id === devId)?.samplerate || 44100;
   await api(`/api/record/start?device_id=${devId}&samplerate=${sr}`, 'POST');
   document.getElementById('btn-start-rec').disabled = true;

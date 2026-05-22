@@ -48,3 +48,44 @@ INFO:     127.0.0.1:53669 - "GET /api/browse?path=%2FUsers%2Fpoepping%2Fs%2FInte
 INFO:     127.0.0.1:53669 - "GET /api/browse?path=%2FUsers%2Fpoepping%2Fs%2FInteresting_Ideas%2Freferences%2Fviable_teleprompter HTTP/1.1" 200 OK
 INFO:     127.0.0.1:53669 - "POST /api/items/68a2c650-3a32-40d7-85fa-462c4a374e85/links HTTP/1.1" 200 OK
 INFO:     127.0.0.1:53669 - "POST /api/launch?path=%2FUsers%2Fpoepping%2Fs%2FInteresting_Ideas%2Freferences%2Fviable_teleprompter HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53791 - "PATCH /api/items/b9ba5f63-90ea-4fd5-bc48-79c86963bad4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53927 - "PATCH /api/items/b9ba5f63-90ea-4fd5-bc48-79c86963bad4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53927 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53928 - "POST /api/record/start?device_id=7&samplerate=48000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53930 - "POST /api/record/stop?x=418.5167996123087&y=581.1425205654872 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53930 - "PATCH /api/items/35c40273-0bb0-4c43-92ca-dc45d38a445c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53931 - "PATCH /api/items/35c40273-0bb0-4c43-92ca-dc45d38a445c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53932 - "PATCH /api/items/35c40273-0bb0-4c43-92ca-dc45d38a445c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53932 - "PATCH /api/items/35c40273-0bb0-4c43-92ca-dc45d38a445c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53934 - "PATCH /api/items/35c40273-0bb0-4c43-92ca-dc45d38a445c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53934 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53934 - "POST /api/record/start?device_id=7&samplerate=48000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53936 - "POST /api/record/stop?x=418.5167996123087&y=581.1425205654872 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53936 - "PATCH /api/items/b93750dc-f913-4dea-9008-aa1bdf5bb8b8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53937 - "PATCH /api/items/b93750dc-f913-4dea-9008-aa1bdf5bb8b8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53938 - "PATCH /api/items/b93750dc-f913-4dea-9008-aa1bdf5bb8b8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53941 - "PATCH /api/items/b93750dc-f913-4dea-9008-aa1bdf5bb8b8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53941 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53942 - "POST /api/record/start?device_id=7&samplerate=48000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53944 - "POST /api/record/stop?x=890.6294990175595&y=608.5347249678397 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53944 - "PATCH /api/items/5864b9dd-10d4-4930-b73e-e5d5ab7ed8b5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53946 - "PATCH /api/items/5864b9dd-10d4-4930-b73e-e5d5ab7ed8b5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53947 - "PATCH /api/items/5864b9dd-10d4-4930-b73e-e5d5ab7ed8b5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53948 - "PATCH /api/items/68a2c650-3a32-40d7-85fa-462c4a374e85 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53951 - "PATCH /api/items/5864b9dd-10d4-4930-b73e-e5d5ab7ed8b5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54411 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54411 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54412 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:54411 - "GET /api/canvas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54464 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54464 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54467 - "GET /static/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54467 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54467 - "GET /api/canvas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54473 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54473 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54476 - "GET /static/app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54476 - "GET /api/canvas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54476 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54476 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54476 - "GET /api/devices HTTP/1.1" 200 OK
