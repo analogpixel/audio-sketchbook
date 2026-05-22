@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Sketchbook</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@600,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div id="toolbar">
+  <span class="logo">audio <span>sketchbook</span></span>
+  <div class="toolbar-actions">
+    <button id="btn-record" title="Record from audio input">⏺ Record</button>
+    <button id="btn-reset" title="Reset view to origin">⊡ Reset</button>
+  </div>
+</div>
+
+<div id="viewport">
+  <div id="canvas-container"></div>
+  <div id="drop-overlay">Drop audio files to add to canvas</div>
+</div>
+
+<!-- ── File Browser Modal ─────────────────────────────── -->
+<div id="modal-browser" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-content" style="width:520px">
+    <div class="modal-header">
+      <h3>Add Link</h3>
+      <button onclick="closeModal('modal-browser')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="browser-path-bar"></div>
+      <div id="browser-list"></div>
+    </div>
+    <div class="modal-footer">
+      <button onclick="closeModal('modal-browser')">Cancel</button>
+      <button id="btn-select-path" class="primary" onclick="confirmBrowserSelection()">Select</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Record Modal ───────────────────────────────────── -->
+<div id="modal-record" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-content" style="width:420px">
+    <div class="modal-header">
+      <h3>Record Audio</h3>
+      <button onclick="closeModal('modal-record')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="record-body">
+        <div>
+          <label>Input Device</label>
+          <select id="record-device"></select>
+        </div>
+        <div>
+          <div id="record-meter-wrap"><div id="record-meter"></div></div>
+        </div>
+        <div id="record-status"></div>
+        <div class="record-controls">
+          <button id="btn-start-rec" onclick="startRecording()">⏺ Start</button>
+          <button id="btn-stop-rec" onclick="stopRecording()" disabled>⏹ Stop &amp; Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

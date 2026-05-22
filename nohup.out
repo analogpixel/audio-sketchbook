@@ -1,0 +1,50 @@
+INFO:     Will watch for changes in these directories: ['/Users/poepping/s/Interesting_Ideas/ideas/simple_grove/audio-sketchbook']
+INFO:     Uvicorn running on http://127.0.0.1:8765 (Press CTRL+C to quit)
+INFO:     Started reloader process [21109] using WatchFiles
+INFO:     Started server process [21116]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53496 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53496 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53497 - "GET /static/app.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:53496 - "GET /api/canvas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53500 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53500 - "GET /api/canvas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53500 - "GET /api/audio/68a2c650-3a32-40d7-85fa-462c4a374e85 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53554 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53555 - "POST /api/record/start?device_id=7&samplerate=48000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53557 - "POST /api/record/stop?x=743.5&y=377 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53561 - "PATCH /api/items/b9ba5f63-90ea-4fd5-bc48-79c86963bad4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53562 - "PATCH /api/items/b9ba5f63-90ea-4fd5-bc48-79c86963bad4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53562 - "PATCH /api/items/b9ba5f63-90ea-4fd5-bc48-79c86963bad4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53563 - "PATCH /api/items/b9ba5f63-90ea-4fd5-bc48-79c86963bad4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53609 - "PATCH /api/items/b9ba5f63-90ea-4fd5-bc48-79c86963bad4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53609 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53610 - "POST /api/record/start?device_id=7&samplerate=48000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53616 - "POST /api/record/stop?x=743.5&y=377 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53619 - "PATCH /api/items/9ab222fa-01a0-4ca2-a0b4-25d2f4425859 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53620 - "PATCH /api/items/9ab222fa-01a0-4ca2-a0b4-25d2f4425859 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53620 - "PATCH /api/items/9ab222fa-01a0-4ca2-a0b4-25d2f4425859 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53634 - "GET /api/devices HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53635 - "POST /api/record/start?device_id=7&samplerate=48000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53637 - "POST /api/record/stop?x=743.5&y=377 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53638 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53640 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53642 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53644 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53645 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53645 - "GET /api/audio/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53647 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53648 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53649 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53649 - "PATCH /api/items/fdf1ab85-15ac-4c8c-bc08-8f789a6e59ea HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53650 - "PATCH /api/items/68a2c650-3a32-40d7-85fa-462c4a374e85 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53668 - "GET /api/browse?path=~ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53668 - "GET /api/browse?path=%2FUsers%2Fpoepping%2Fs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53668 - "GET /api/browse?path=%2FUsers%2Fpoepping%2Fs%2FInteresting_Ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53668 - "GET /api/browse?path=%2FUsers%2Fpoepping%2Fs%2FInteresting_Ideas%2Fideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53669 - "GET /api/browse?path=%2FUsers%2Fpoepping%2Fs%2FInteresting_Ideas HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53669 - "GET /api/browse?path=%2FUsers%2Fpoepping%2Fs%2FInteresting_Ideas%2Freferences HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53669 - "GET /api/browse?path=%2FUsers%2Fpoepping%2Fs%2FInteresting_Ideas%2Freferences%2Fviable_teleprompter HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53669 - "POST /api/items/68a2c650-3a32-40d7-85fa-462c4a374e85/links HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53669 - "POST /api/launch?path=%2FUsers%2Fpoepping%2Fs%2FInteresting_Ideas%2Freferences%2Fviable_teleprompter HTTP/1.1" 200 OK

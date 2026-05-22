@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: audio-sketchbook
+  namespace: audio-sketchbook
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: audio-sketchbook
+  template:
+    metadata:
+      labels:
+        app: audio-sketchbook
+    spec:
+      containers:
+        - name: audio-sketchbook
+          image: pi-1.local:5000/audio-sketchbook:latest
+          ports:
+            - containerPort: 8765
+          env:
+            - name: DATA_DIR
+              value: /data/sketchbook
+          volumeMounts:
+            - name: data
+              mountPath: /data
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: audio-sketchbook-data
